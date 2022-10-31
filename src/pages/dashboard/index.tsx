@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from "./layout";
 
-const Dashboard: React.FC = () => {
+const Dashboard = () => {
   return (
-    <div>
+    <Layout>
       <h1>Dashboard</h1>
-    </div>
+    </Layout>
   );
 };
 

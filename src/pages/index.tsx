@@ -1,7 +1,7 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
-import Nav from "../components/navigation";
-import Hero from "../components/landing-page/Hero";
+import Nav from "../components/landing-page/navigation";
+import Hero from "../components/landing-page/hero/Hero";
 
 const Home: NextPage = () => {
   return (
@@ -20,9 +20,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  return {
-    props: {},
-  };
-};
