@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../ui/Button";
+import Button from "../../ui/button/Button";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 

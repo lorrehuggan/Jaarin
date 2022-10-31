@@ -1,7 +1,7 @@
 import React from "react";
 //import { signIn, useSession, getSession } from "next-auth/react";
 import type { GetServerSideProps } from "next";
-import Button from "../../../components/ui/Button";
+import Button from "../../../components/ui/button/Button";
 
 const SignIn: React.FC = () => {
   const handleSignIn = () => {
