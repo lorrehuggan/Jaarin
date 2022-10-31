@@ -10,24 +10,24 @@ import Link from "next/link";
 
 const DashboardNav: React.FC = () => {
   return (
-    <nav className="fixed top-0 left-0 flex h-screen w-16 flex-col items-center justify-between border-b-base-dark-300 bg-base-dark-200 py-4 shadow-md">
+    <nav className="fixed top-0 left-0 flex h-screen w-16 flex-col items-center justify-between border-r border-base-dark-300 border-b-base-dark-300 bg-base-dark-200 py-4 shadow-lg">
       <div className="flex flex-col gap-2">
         <NavIcon href="">
-          <HomeIcon className="h-6 w-6" />
+          <HomeIcon className="color-transition h-4 w-4 group-hover:text-primary" />
         </NavIcon>
         <NavIcon href="">
-          <BarChartIcon className="h-6 w-6" />
+          <BarChartIcon className="color-transition h-4 w-4 group-hover:text-primary" />
         </NavIcon>
         <NavIcon href="">
-          <PersonIcon className="h-6 w-6" />
+          <PersonIcon className="color-transition h-4 w-4 group-hover:text-primary" />
         </NavIcon>
         <NavIcon href="">
-          <PlusIcon className="h-6 w-6" />
+          <PlusIcon className="color-transition h-4 w-4 group-hover:text-primary" />
         </NavIcon>
       </div>
       <div>
         <NavIcon href="/" ariaLabel="link back to home page">
-          <ResetIcon className="h-6 w-6" />
+          <ResetIcon className="color-transition h4 w-4 group-hover:text-primary" />
         </NavIcon>
       </div>
     </nav>
@@ -46,7 +46,7 @@ const NavIcon: React.FC<NavIconProps> = ({ children, href, ariaLabel }) => {
     <Link href={href}>
       <a
         aria-label={ariaLabel}
-        className="flex items-center justify-center rounded-sm bg-base-dark-300 p-3"
+        className="color-transition group flex items-center justify-center rounded-sm bg-base-dark-300 p-3 hover:bg-base-dark "
       >
         {children}
       </a>
