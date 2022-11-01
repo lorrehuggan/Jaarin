@@ -16,7 +16,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       </Head>
       <main className="">
         <DashboardNav />
-        <section className="ml-16 flex h-screen items-center justify-center pt-8">
+        <section className="ml-16 flex h-screen w-[calc(100vw-64px)] items-center justify-center pt-8">
           {children}
         </section>
       </main>

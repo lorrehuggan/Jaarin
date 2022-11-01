@@ -24,14 +24,14 @@ const Hero: React.FC = () => {
       </p>
 
       <div className="mt-8 flex items-center justify-center">
-        <Button theme="primary" size="lg">
-          <Link href="/dashboard">
+        <Link href="/dashboard">
+          <Button theme="primary" size="lg">
             <a className="flex items-center gap-1">
               <span>Get Started</span>
               <ChevronDoubleRightIcon className="h-4 w-4" />
             </a>
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </section>
   );

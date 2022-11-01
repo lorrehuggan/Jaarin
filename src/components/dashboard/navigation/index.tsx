@@ -5,6 +5,7 @@ import {
   PersonIcon,
   PlusIcon,
   ResetIcon,
+  ArrowUpIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
 
@@ -23,6 +24,9 @@ const DashboardNav: React.FC = () => {
         </NavIcon>
         <NavIcon href="">
           <PlusIcon className="color-transition h-4 w-4 group-hover:text-primary" />
+        </NavIcon>
+        <NavIcon href="">
+          <ArrowUpIcon className="color-transition h-4 w-4 group-hover:text-primary" />
         </NavIcon>
       </div>
       <div>
