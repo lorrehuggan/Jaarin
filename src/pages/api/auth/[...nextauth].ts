@@ -24,10 +24,10 @@ export const authOptions: NextAuthOptions = {
       clientSecret: env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  // pages: {
-  //   signIn: "/auth/signin",
-  //   newUser: "/auth/newuser",
-  // },
+  pages: {
+    signIn: "/auth/signin",
+    newUser: "/auth/newuser",
+  },
 };
 
 export default NextAuth(authOptions);

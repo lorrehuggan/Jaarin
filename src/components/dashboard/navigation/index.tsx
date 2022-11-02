@@ -8,6 +8,7 @@ import {
   ArrowUpIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
+import NavIcon from "@components/ui/navIcon/NavIcons";
 
 const DashboardNav: React.FC = () => {
   return (
@@ -30,30 +31,11 @@ const DashboardNav: React.FC = () => {
         </NavIcon>
       </div>
       <div>
-        <NavIcon href="/" ariaLabel="link back to home page">
-          <ResetIcon className="color-transition h4 w-4 group-hover:text-primary" />
+        <NavIcon href="/" ariaLabel="log out">
+          <ResetIcon className="color-transition h-4 w-4 group-hover:text-primary" />
         </NavIcon>
       </div>
     </nav>
   );
 };
 export default DashboardNav;
-
-interface NavIconProps {
-  children: React.ReactNode;
-  href: string;
-  ariaLabel?: string;
-}
-
-const NavIcon: React.FC<NavIconProps> = ({ children, href, ariaLabel }) => {
-  return (
-    <Link href={href}>
-      <a
-        aria-label={ariaLabel}
-        className="color-transition group flex items-center justify-center rounded-sm bg-base-dark-300 p-3 hover:bg-base-dark "
-      >
-        {children}
-      </a>
-    </Link>
-  );
-};

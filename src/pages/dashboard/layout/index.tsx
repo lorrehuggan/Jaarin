@@ -1,3 +1,4 @@
+import StatusBar from "@components/dashboard/statusBar";
 import Head from "next/head";
 import React from "react";
 import DashboardNav from "../../../components/dashboard/navigation";
@@ -16,8 +17,9 @@ const Layout: React.FC<Props> = ({ children }) => {
       </Head>
       <main className="">
         <DashboardNav />
-        <section className="ml-16 flex h-screen w-[calc(100vw-64px)] items-center justify-center pt-8">
-          {children}
+        <section className="ml-16 h-screen w-[calc(100vw-64px)]">
+          <StatusBar />
+          <section className="p-4">{children}</section>
         </section>
       </main>
     </>

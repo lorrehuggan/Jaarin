@@ -1,12 +1,23 @@
 import React from "react";
 import Button from "../../ui/button/Button";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
+import {
+  SiUbereats,
+  SiUber,
+  SiDeliveroo,
+  SiJusteat,
+  SiLyft,
+  SiDoordash,
+  SiGrubhub,
+  SiPostmates,
+  SiInstacart,
+} from "react-icons/si";
 import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
     <section className="pt-8">
-      <div className="text-center ">
+      <div className="text-center">
         <span className=" uppercase text-base-dark-300">Public Beta</span>
       </div>
       <h1 className="mt-8 text-center text-4xl font-black tracking-tighter xl:text-9xl">
@@ -32,6 +43,23 @@ const Hero: React.FC = () => {
             </a>
           </Button>
         </Link>
+      </div>
+      <div className="mt-16">
+        <div className="mt-4 flex items-center justify-between">
+          <SiUbereats
+            title="uber eats"
+            aria-label="uber eats"
+            className="h-16 w-16 text-base-dark-300"
+          />
+          <SiUber className="h-16 w-16 text-base-dark-300" />
+          <SiJusteat className="h-16 w-16 text-base-dark-300" />
+          <SiLyft className="h-16 w-16 text-base-dark-300" />
+          <SiDeliveroo className="h-16 w-16 text-base-dark-300" />
+          <SiGrubhub className="h-16 w-16 text-base-dark-300" />
+          <SiDoordash className="h-16 w-16 text-base-dark-300" />
+          <SiPostmates className="h-16 w-16 text-base-dark-300" />
+          <SiInstacart className="h-16 w-16 text-base-dark-300" />
+        </div>
       </div>
     </section>
   );
