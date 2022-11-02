@@ -4,6 +4,7 @@ import Button from "../../ui/button/Button";
 import { Bars3Icon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { logoVariants } from "./animations";
+import { GiMasonJar } from "react-icons/gi";
 
 const Nav: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Nav: React.FC = () => {
           className="absolute left-0 flex items-center gap-1
       "
         >
-          <CurrencyDollarIcon className=" h-5 w-5 fill-primary  xl:h-8 xl:w-8" />
+          <GiMasonJar className=" h-5 w-5 fill-primary  xl:h-8 xl:w-8" />
           <Link aria-label="Link to home page" href="/">
             <motion.a
               variants={logoVariants}
@@ -38,12 +39,16 @@ const Nav: React.FC = () => {
           </Link>
         </ul>
         <div className="absolute right-0 hidden items-center gap-4 md:flex">
-          <Button theme="invisible" size="md">
-            Sign Up
-          </Button>
-          <Button theme="primary-outline" size="md">
-            Sign In
-          </Button>
+          <Link href="/auth/signup">
+            <Button theme="invisible" size="md">
+              Sign Up
+            </Button>
+          </Link>
+          <Link href="/auth/signin">
+            <Button theme="primary-outline" size="md">
+              Sign In
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
