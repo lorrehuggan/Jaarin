@@ -1,10 +1,13 @@
+import Box from "@components/ui/box";
 import React from "react";
 import Layout from "./layout";
 
 const Dashboard = () => {
   return (
     <Layout>
-      <h1>Dashboard</h1>
+      <Box>
+        <p className='uppercase font-black text-sm'>Top of the pops</p>
+      </Box>
     </Layout>
   );
 };

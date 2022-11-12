@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import Button from "../../ui/button/Button";
+import Button from "../../ui/button/";
 import { Bars3Icon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { logoVariants } from "./animations";
 import { GiMasonJar } from "react-icons/gi";
+
 
 const Nav: React.FC = () => {
   return (

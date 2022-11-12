@@ -8,7 +8,7 @@ import {
   ArrowUpIcon,
 } from "@radix-ui/react-icons";
 import Link from "next/link";
-import NavIcon from "@components/ui/navIcon/NavIcons";
+import NavIcon from "@components/ui/navIcon";
 
 const DashboardNav: React.FC = () => {
   return (

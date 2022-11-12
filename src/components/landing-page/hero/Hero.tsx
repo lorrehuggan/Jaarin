@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../ui/button/Button";
+import Button from "../../../components/ui/button";
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/solid";
 import {
   SiUbereats,
